@@ -1,0 +1,11 @@
+version: "2.1"
+
+services:
+  apachecont:
+    build: ./
+    
+    ports:
+      - 8080:80
+    
+    volumes:
+      - "/home/jenkins/workspace/docker/html:/var/www/html:ro"
